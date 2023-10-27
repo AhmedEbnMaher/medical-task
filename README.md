@@ -19,7 +19,9 @@ login page with radio button to know if you user or doctor
 you have this three accounts for users
 
 ahmedmaher@gmail.com
+
 alimohamed@gmail.com
+
 mohamedali@jmail.com
 
 and the three users have the same password 12345678
@@ -41,11 +43,18 @@ and please login with the mail of the doctor who you send him the request
 we have 6 acounts for doctors and here are this accounts
 
 schubert@gmail.com
+
 ahmed@gmail.com
+
 menna@gmail.com
+
 fahd@gmail.com
+
 malika@gmail.com
+
 kaled@gmail.com
+
+and all of them have the same password 12345678 too
 
 don't forget to choose radio button as doctor
 after login you will redirect to dashboard page
