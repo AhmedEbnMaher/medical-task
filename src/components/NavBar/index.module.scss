@@ -1,0 +1,36 @@
+.navBarRoot{
+    width:100%;
+    background-color: #F3F7F4;
+
+}
+.nav{
+    display: flex;
+    height: 91px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.pageTitle{
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: capitalize;
+    @media (max-width:600px) {
+        font-size: 12px;
+    }
+}
+.navSideSection{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    @media (max-width:600px) {
+        width: 120px;
+    }
+}
+.userName{
+    font-size: 14px;
+    color:#616161;
+    margin-top: 10px;
+    @media (max-width:600px) {
+       display: none;
+    }
+}

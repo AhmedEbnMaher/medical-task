@@ -1,0 +1,15 @@
+.addApointmentRoot{
+    height:300px;
+    width:30vw;
+    background-color:#26C485 ;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    @media (max-width:768px) {
+        margin: auto;
+        width: 90%;
+    }
+}

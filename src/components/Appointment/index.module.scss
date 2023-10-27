@@ -1,0 +1,25 @@
+.appointmentRoot{
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.appointTitle{
+    font-size: 13px;
+    font-weight: bold;
+    color:#42CB95;
+}
+.appointName{
+    font-size: 13px;
+    color: #68686E;
+    font-weight: 600;
+}
+.appointDate{
+    font-size: 13px;
+    color: #616161;
+}
+.avatarSection{
+    display: flex;
+    align-items: center;
+}

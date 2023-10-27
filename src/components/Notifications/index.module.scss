@@ -1,0 +1,24 @@
+.notificationTitle{
+    font-size: 16px;
+    font-weight: bold;
+    color: #616161;
+    padding: 10px;
+}
+.itemsSection{
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 13px;
+    color: #616161;
+}
+.acceptButton{
+    color: blue !important;
+    text-transform: capitalize !important;
+    
+    
+}
+.cancelButton{
+    color:red !important;
+    text-transform: capitalize !important;
+}

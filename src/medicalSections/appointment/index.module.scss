@@ -1,0 +1,37 @@
+.appointPageRoot{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:600px) {
+        display: block;
+    }
+}
+.appointSection{
+    background-color: #fff;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #ccc;
+    border: 1px solid #ccc;
+    @media (max-width:600px) {
+       width:100%;
+    }
+}
+.title{
+    font-size: 16px;
+    color: #616161;
+   
+    
+}
+.reminderSection{
+    background-color: #fff;
+    width: 35%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #ccc;
+    border: 1px solid #ccc; 
+    height: 100%;
+    @media (max-width:600px) {
+       width: 100%;
+       margin-top: 20px;
+    }
+}

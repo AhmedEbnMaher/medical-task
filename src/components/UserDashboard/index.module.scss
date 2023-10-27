@@ -1,0 +1,54 @@
+.doctorsCards{
+    margin-top: 79px;
+    text-align: center ;
+}
+.reminderSection{
+    background-color: #fff;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #ccc;
+    border: 1px solid #ccc; 
+    height: 100%;
+    @media (max-width:768px) {
+       width: 100%;
+       margin-top: 20px;
+    }
+}
+.title{
+        font-size: 16px;
+        color: #616161;
+       
+        
+    }  
+    .topSection{
+        display: flex;
+        justify-content: space-between;
+        
+        @media (max-width:768px) {
+            display: block;
+           
+        }
+    } 
+.appontmentModal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ModelContainer{
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #ccc;
+    width: 470px;
+    position: relative;
+    outline: none;
+    border-radius: 4px ;
+   
+}
+.innerContent{
+    padding: 21px;
+}
+.modelCloseIcon{
+    position: absolute;
+    right: 0;
+    
+}

@@ -1,0 +1,36 @@
+.recodsPageRoot{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width:600px) {
+        display: block;
+    }
+}
+.title{
+    font-size: 16px;
+    color: #616161; 
+}
+.recordstSection{
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #ccc;
+    border: 1px solid #ccc;
+    @media (max-width:600px) {
+       width:100%;
+    }   
+}
+.recordTitles{
+    font-size: 13px;
+    color: #616161;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+.sections{
+    width:25%;
+    display: flex;
+    justify-content: center;
+}
+
+    
