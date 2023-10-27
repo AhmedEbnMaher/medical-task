@@ -47,6 +47,8 @@ fahd@gmail.com
 malika@gmail.com
 kaled@gmail.com
 
+and all of them have the same password 12345678 too
+
 don't forget to choose radio button as doctor
 after login you will redirect to dashboard page
 
