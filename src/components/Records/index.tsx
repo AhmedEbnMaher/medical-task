@@ -9,15 +9,15 @@ export const Records = ({ record }: Props) => {
   return (
     <div>
       <Box className={styles.medicalRecordRoot}>
-        <span className={styles.sections}>
-          <BiSolidFile color="#42CB95" size={15} />
+        <span>
+          <BiSolidFile color="#42CB95" size={15} marginRight={'5px'} />
           {record.name}
         </span>
-        <span className={styles.sections}> {record.period}</span>
-        <span className={styles.sections}>{record.hospitalName}</span>
-        <span className={styles.sections}>{record.lapName}</span>
-        <span className={styles.sections}>{record.drName}</span>
-        <span className={styles.sections}>
+        <span> {record.period}</span>
+        <span>{record.hospitalName}</span>
+        <span>{record.lapName}</span>
+        <span>{record.drName}</span>
+        <span>
           <BiLogIn color="blue" size={20} cursor="pointer" />
         </span>
       </Box>

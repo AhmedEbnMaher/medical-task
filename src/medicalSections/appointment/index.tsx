@@ -86,7 +86,7 @@ const RemindersData = [
   },
 ];
 const AppointPage = (props: Props) => {
-  const [usersAppoint, setusersAppoint] = useState('');
+  const [usersAppoint, setusersAppoint] = useState([]);
   const userId = useSelector((state: any) => state.userReducer.profile.id);
 
   const getNewNotification = async () => {
@@ -104,7 +104,7 @@ const AppointPage = (props: Props) => {
             <Box paddingBottom={'20px'}>
               <span className={styles.title}>Next Appointments</span>
             </Box>
-            {usersAppoint !== '' ? (
+            {usersAppoint.length !== 0 ? (
               usersAppoint?.map((appointment: any) => (
                 <AppointMent appointment={appointment.apointment} />
               ))

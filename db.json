@@ -5,34 +5,76 @@
   "444": [],
   "555": [],
   "666": [],
-  "11111": [
-    {
-      "apointment": {
-        "appintTitle": "heart checkup",
-        "drName": "Dr.Menna",
-        "apponintDate": "2023-11-29",
-        "appointmentTime": "12 PM",
-        "avatar": "/doctorsImages/avatar3.jpg",
-        "drId": "333",
-        "userId": "11111"
-      },
-      "id": 1
-    },
-    {
-      "apointment": {
-        "appintTitle": "heart checkup",
-        "drName": "Dr.Menna",
-        "apponintDate": "2023-11-29",
-        "appointmentTime": "12 PM",
-        "avatar": "/doctorsImages/avatar3.jpg",
-        "drId": "333",
-        "userId": "11111"
-      },
-      "id": 2
-    }
-  ],
+  "11111": [],
   "22222": [],
   "33333": [],
+  "doctors": [
+    {
+      "name": "Dr.schubert",
+      "email": "schubert@gmail.com",
+      "password": "12345678",
+      "profileUrl": "/doctorsImages/avatar6.jpg",
+      "id": "111"
+    },
+    {
+      "name": "Dr.Ahmed",
+      "email": "ahmed@gmail.com",
+      "profileUrl": "/doctorsImages/avatar2.jpg",
+      "password": "12345678",
+      "id": "222"
+    },
+    {
+      "name": "Dr.Menna",
+      "email": "menna@gmail.com",
+      "profileUrl": "/doctorsImages/avatar3.jpg",
+      "password": "12345678",
+      "id": "333"
+    },
+    {
+      "name": "Dr.Fahd",
+      "email": "fahd@gmail.com",
+      "profileUrl": "/doctorsImages/avatar4.jpg",
+      "password": "12345678",
+      "id": "444"
+    },
+    {
+      "name": "Dr.Malika",
+      "email": "malika@gmail.com",
+      "profileUrl": "/doctorsImages/avatar1.jpg",
+      "password": "12345678",
+      "id": "555"
+    },
+    {
+      "name": "Dr.Emalia",
+      "email": "kaled@gmail.com",
+      "profileUrl": "/doctorsImages/avatar5.jpg",
+      "password": "12345678",
+      "id": "666"
+    }
+  ],
+  "users": [
+    {
+      "name": "Ahmed",
+      "email": "ahmedmaher@gmail.com",
+      "password": "12345678",
+      "id": "11111",
+      "profileUrl": "/usersImages/avatar1.jpg"
+    },
+    {
+      "name": "Ali",
+      "email": "alimohamed@gmail.com",
+      "password": "12345678",
+      "id": "22222",
+      "profileUrl": "/usersImages/avatar2.jpg"
+    },
+    {
+      "name": "Mohamed",
+      "email": "mohamedali@gmail.com",
+      "password": "12345678",
+      "id": "33333",
+      "profileUrl": "/usersImages/avatar3.jpg"
+    }
+  ],
   "appointment111": [
     {
       "apointment": {
@@ -238,6 +280,238 @@
         "userId": "33333"
       },
       "id": 3
+    }
+  ],
+  "records11111": [
+    {
+      "data": {
+        "name": "Lap Report",
+        "drName": "Dr.Malika",
+        "period": "2023-10-29",
+        "hospitalName": "Elshifaa",
+        "lapName": "Elporge",
+        "patientName": "Ahmed"
+      },
+      "id": 1
+    },
+    {
+      "data": {
+        "name": "Lap Report",
+        "drName": "Dr.Malika",
+        "period": "2023-10-29",
+        "hospitalName": "Elshifaa",
+        "lapName": "Elporge",
+        "patientName": "Ahmed"
+      },
+      "id": 2
+    },
+    {
+      "data": {
+        "name": "Lap Report",
+        "drName": "Dr.Malika",
+        "period": "2023-10-29",
+        "hospitalName": "Elshifaa",
+        "lapName": "Elporge",
+        "patientName": "Ahmed"
+      },
+      "id": 3
+    },
+    {
+      "data": {
+        "name": "dfghnm",
+        "drName": "gfhgjhkbj",
+        "period": "2023-10-29",
+        "hospitalName": "efgrhtjfyhk",
+        "lapName": "rdthj",
+        "patientName": "Ahmed"
+      },
+      "id": 4
+    }
+  ],
+  "records22222": [
+    {
+      "data": {
+        "name": "screen",
+        "drName": "Dr.menna",
+        "period": "30-10-2023",
+        "hospitalName": "hospital event",
+        "lapName": "Alpha Lap",
+        "patientName": "Ali"
+      },
+      "id": 1
+    },
+    {
+      "data": {
+        "name": "screen",
+        "drName": "Dr.menna",
+        "period": "30-10-2023",
+        "hospitalName": "hospital event",
+        "lapName": "Alpha Lap",
+        "patientName": "Ali"
+      },
+      "id": 2
+    },
+    {
+      "data": {
+        "name": "screen",
+        "drName": "Dr.menna",
+        "period": "30-10-2023",
+        "hospitalName": "hospital event",
+        "lapName": "Alpha Lap",
+        "patientName": "Ali"
+      },
+      "id": 3
+    }
+  ],
+  "records33333": [
+    {
+      "data": {
+        "name": "sonar",
+        "drName": "Dr.Malika",
+        "period": "30-10-2023",
+        "hospitalName": "hospital Elalamy",
+        "lapName": "Elmadi lap",
+        "patientName": "Mohamed"
+      },
+      "id": 1
+    },
+    {
+      "data": {
+        "name": "sonar",
+        "drName": "Dr.Malika",
+        "period": "30-10-2023",
+        "hospitalName": "hospital Elalamy",
+        "lapName": "Elmadi lap",
+        "patientName": "Mohamed"
+      },
+      "id": 2
+    },
+    {
+      "data": {
+        "name": "sonar",
+        "drName": "Dr.Malika",
+        "period": "30-10-2023",
+        "hospitalName": "hospital Elalamy",
+        "lapName": "Elmadi lap",
+        "patientName": "Mohamed"
+      },
+      "id": 3
+    }
+  ],
+  "allrecords": [
+    {
+      "id": 1,
+      "records": [
+        {
+          "data": {
+            "name": "Lap Report",
+            "drName": "Dr.Malika",
+            "period": "2023-10-29",
+            "hospitalName": "Elshifaa",
+            "lapName": "Elporge",
+            "patientName": "Ahmed"
+          },
+          "id": 1
+        },
+        {
+          "data": {
+            "name": "Lap Report",
+            "drName": "Dr.Malika",
+            "period": "2023-10-29",
+            "hospitalName": "Elshifaa",
+            "lapName": "Elporge",
+            "patientName": "Ahmed"
+          },
+          "id": 2
+        },
+        {
+          "data": {
+            "name": "Lap Report",
+            "drName": "Dr.Malika",
+            "period": "2023-10-29",
+            "hospitalName": "Elshifaa",
+            "lapName": "Elporge",
+            "patientName": "Ahmed"
+          },
+          "id": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "records": [
+        {
+          "data": {
+            "name": "screen",
+            "drName": "Dr.menna",
+            "period": "30-10-2023",
+            "hospitalName": "hospital event",
+            "lapName": "Alpha Lap",
+            "patientName": "Ali"
+          },
+          "id": 1
+        },
+        {
+          "data": {
+            "name": "screen",
+            "drName": "Dr.menna",
+            "period": "30-10-2023",
+            "hospitalName": "hospital event",
+            "lapName": "Alpha Lap",
+            "patientName": "Ali"
+          },
+          "id": 2
+        },
+        {
+          "data": {
+            "name": "screen",
+            "drName": "Dr.menna",
+            "period": "30-10-2023",
+            "hospitalName": "hospital event",
+            "lapName": "Alpha Lap",
+            "patientName": "Ali"
+          },
+          "id": 3
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "records": [
+        {
+          "data": {
+            "name": "sonar",
+            "drName": "Dr.Malika",
+            "period": "30-10-2023",
+            "hospitalName": "hospital Elalamy",
+            "lapName": "Elmadi lap",
+            "patientName": "Mohamed"
+          },
+          "id": 1
+        },
+        {
+          "data": {
+            "name": "sonar",
+            "drName": "Dr.Malika",
+            "period": "30-10-2023",
+            "hospitalName": "hospital Elalamy",
+            "lapName": "Elmadi lap",
+            "patientName": "Mohamed"
+          },
+          "id": 2
+        },
+        {
+          "data": {
+            "name": "sonar",
+            "drName": "Dr.Malika",
+            "period": "30-10-2023",
+            "hospitalName": "hospital Elalamy",
+            "lapName": "Elmadi lap",
+            "patientName": "Mohamed"
+          },
+          "id": 3
+        }
+      ]
     }
   ]
 }

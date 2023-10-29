@@ -7,16 +7,18 @@ import { useSelector } from 'react-redux';
 import AppointMent from '../Appointment';
 import Cards from '../Cards';
 import { useRouter } from 'next/navigation';
+import queryString from 'query-string';
 
 type Props = {
   userData: any;
 };
 const DcotorDashboard = ({ userData }: Props) => {
   const router = useRouter();
-  const [dcotorAppoint, setDoctorAppoint] = useState('');
+  const [dcotorAppoint, setDoctorAppoint] = useState([]);
   const userId = useSelector((state: any) => state.userReducer.profile.id);
   const handelClick = (data: any) => {
-    router.push('/medical-records');
+    const query = { userId: data.id };
+    router.push(`/medical-records/?&${queryString.stringify(query)}`);
   };
   const getNewNotification = async () => {
     const Data = await getDoctorsAppointments(userId);
@@ -33,10 +35,13 @@ const DcotorDashboard = ({ userData }: Props) => {
             Hello Dr your Next Appointments Here
           </span>
         </Box>
-        {dcotorAppoint !== '' ? (
-          dcotorAppoint?.map((appointment: any) => (
-            <AppointMent appointment={appointment.apointment} />
-          ))
+        {dcotorAppoint ? (
+          <Box>
+            {' '}
+            {dcotorAppoint?.map((appointment: any) => (
+              <AppointMent appointment={appointment.apointment} />
+            ))}
+          </Box>
         ) : (
           <></>
         )}
@@ -78,7 +83,7 @@ const DcotorDashboard = ({ userData }: Props) => {
                 cardImgUrl={user.profileUrl}
                 cardTitleColor={'#42CB95'}
                 cardSubTitleColor={'#616161'}
-                data={userData}
+                data={user}
                 handelClick={handelClick}
               />
             </Grid>

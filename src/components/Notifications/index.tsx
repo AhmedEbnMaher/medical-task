@@ -15,12 +15,13 @@ import {
 } from '@/apis/notificationsApis';
 import styles from './index.module.scss';
 import { useSelector } from 'react-redux';
+import { useState } from 'react';
 
 const ITEM_HEIGHT = 68;
 
 export default function Notifications() {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const [notification, setNotifications] = React.useState();
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  const [notification, setNotifications] = useState([]);
   const userId = useSelector((state: any) => state.userReducer.profile.id);
   const userType = useSelector((state: any) => state.userReducer.userType);
 
@@ -91,45 +92,52 @@ export default function Notifications() {
         <Box>
           <span className={styles.notificationTitle}>Notifications</span>
         </Box>
-        {notification ? (
-          notification?.map((option: any) => (
-            <MenuItem
-              key={option?.id}
-              selected={option === 'Pyxis'}
-              style={{ whiteSpace: 'normal' }}
-            >
-              {userType === 'user' ? (
-                <Box className={styles.itemsSection}>
-                  hello {option.apointment.drName} acceptd your appointment at{' '}
-                  {option.apointment.apponintDate} to do{' '}
-                  {option.apointment.appintTitle}
-                  <Box>
-                    <Button
-                      onClick={() => HandelAsRed(option.apointment, option.id)}
-                      className={styles.cancelButton}
-                    >
-                      Mark as red
-                    </Button>
+
+        {notification.length !== 0 ? (
+          <Box>
+            {notification?.map((option: any) => (
+              <MenuItem
+                key={option?.id}
+                selected={option === 'Pyxis'}
+                style={{ whiteSpace: 'normal' }}
+              >
+                {userType === 'user' ? (
+                  <Box className={styles.itemsSection}>
+                    hello {option.apointment.drName} acceptd your appointment at{' '}
+                    {option.apointment.apponintDate} to do{' '}
+                    {option.apointment.appintTitle}
+                    <Box>
+                      <Button
+                        onClick={() =>
+                          HandelAsRed(option.apointment, option.id)
+                        }
+                        className={styles.cancelButton}
+                      >
+                        Mark as red
+                      </Button>
+                    </Box>
                   </Box>
-                </Box>
-              ) : (
-                <Box className={styles.itemsSection}>
-                  hello {option.apointment.drName} new pationt want new
-                  apointment at {option.apointment.apponintDate} to do{' '}
-                  {option.apointment.appintTitle}
-                  <Box>
-                    <Button
-                      onClick={() => HandelAccept(option.apointment, option.id)}
-                      className={styles.acceptButton}
-                    >
-                      Accept
-                    </Button>
-                    <Button className={styles.cancelButton}>Cancel</Button>
+                ) : (
+                  <Box className={styles.itemsSection}>
+                    hello {option.apointment.drName} new pationt want new
+                    apointment at {option.apointment.apponintDate} to do{' '}
+                    {option.apointment.appintTitle}
+                    <Box>
+                      <Button
+                        onClick={() =>
+                          HandelAccept(option.apointment, option.id)
+                        }
+                        className={styles.acceptButton}
+                      >
+                        Accept
+                      </Button>
+                      <Button className={styles.cancelButton}>Cancel</Button>
+                    </Box>
                   </Box>
-                </Box>
-              )}
-            </MenuItem>
-          ))
+                )}
+              </MenuItem>
+            ))}
+          </Box>
         ) : (
           <>
             <span>no Notifications</span>
