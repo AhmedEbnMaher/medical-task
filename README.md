@@ -62,7 +62,7 @@ after login you will redirect to dashboard page
 you will find docotrs appointments with patients
 and patients who can check thier medical records
 
-you will fin notification with appointment which you send
+you will find notification with appointment which you send
 
 to request appointment
 open notification and choose accept
@@ -78,6 +78,14 @@ and if you open appointment page you will find this appointment added to this
 user appointments
 
 if you marked notifications as red it will be deleted
+
+you can add new record  by patient account
+
+and by doctor account you can see all medical records for all patients
+
+and you can see every patient record by choose one patient fro patient list in dashboard
+
+when you press this patient you will be redirect to records page and you will fined only this patient records
 
 you can check mobile responsive
 
